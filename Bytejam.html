@@ -1,0 +1,142 @@
+<!--I am not sure why the header are went green. I was unable to resolve before submission. Have a 
+suspicion it occured when I copy/pasted the form sheet into the webpage. Potentially conflicting CSS.-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="structure.css">
+    <style>
+    .field1 {background-color:hsl(358, 65%, 39%); color:white; width:450px; border-style: solid;border-width: 5px; 
+        border-color: gold; border-radius: 10px;
+    }
+    form fieldset.field1 label {
+        width: 110px; display:inline-block; padding:5px; margin:10px;
+    }
+        
+    input[type="text"], input[type="email"] {width: 210px; padding:5px; margin:10px;
+    }
+    input[type="text"]:focus {background-color: gold; 
+    }
+    input[type="email"]:focus {background-color: gold;
+    }
+    input[type="radio"]{margin-left: 30px;}
+    form 
+    .dc-radio, .marvel-radio {
+        display: flex;
+    }
+    .dc-radio {
+        margin-left: 50px;
+    }
+    .marvel-radio {
+        float: right;
+    }
+    #submit-button {
+        cursor: pointer;
+        margin-left: 45%;
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 150ms;
+    }
+    #submit-button:hover {
+        background-color: hsl(0, 0%, 95%);
+    }
+    #submit-button:active {
+        background: hsl(0, 0%, 90%);
+    }
+    
+    p {padding:5px; margin:10px;
+    }
+    h2 {text-align:center;
+    }
+	footer {text-align: left;}
+
+
+    </style>
+	
+<title>Bytejam</title>
+</head>
+<body>
+<div id="container">
+	<header>
+	<a href="index.html"><img src= images/icon.png alt="banner">
+	</header>
+	<nav> 
+		<ul><li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="Bytejam.html">Bytejam</a></li>
+		</ul>
+	</nav>
+	<div id="content">
+		<section id="colOne">
+			<p>From Nov. 9th to Nov. 15th 2022, I constructed a project along with a team of 6 other students for an event called Bytejam. The theme for Bytejam this year
+			   was "Superheroes" and we decided to build a website. Two highlights of our project were an incorporated Marvel Api that allowed users to search for Marvel characters,
+			   the api would return data and comics they were featured in, as well as a survey that submitted data to a google spreadsheet. I built the form and with the help of
+			   a second year student we got it working so that the survey data was logged. Below are screenshots of our website and the survey is included at the right.</p>
+			<img src= images/homepage.jpg width=100% alt="The homepage of our website">
+			<p>Home Page</p>
+			<img src= images/Apipage.jpg width=100% alt="The API page">
+			<p>API Page</p>
+			<img src= images/Historypage.jpg width=100% alt="History page">
+			<p>History Page</p>
+			<img src= images/team.jpg width=75% alt="Screenshot of team members">
+			<p>Team Members</p>
+				
+		</section>
+		<!-- ^ End tag for "colOne" -->
+	<aside id="colTwo">
+	<title>Survey</title>
+	<form method="get" target="_blank"action="https://www.w3schools.com/action_page.php">
+    <fieldset class="field1">
+        <h2>Take our survey!</h2>
+        <br>
+        <label for="age">Age Range</label>
+        <select name="age" id="age">
+        <option name="select">select one</option>
+        <option value="13-17">13-17</option>
+        <option value="18-24">18-24</option>
+        <option value="25-30">25-30</option>
+        <option value="30-40">30-40</option>
+        <option value="40+">40+</option>  
+        </select>
+        <br>
+        <label for="favMovie">Favorite Hero Related Movie</label>
+        <input type="text" name="favMovie" id="favMovie">
+        <label for="favorite">Marvel or DC?</label>
+        <br>
+        <input type="radio" id="Marvel" name="favorite" value="favorite">
+        <label for="Marvel">Marvel</label>
+        <input type="radio" id="DC" name="favorite" value="DC">
+        <label for="DC">DC</label>
+        <label for="favHero">Favorite Hero:</label>
+        <input type="text" name="favHero" id="favHero">
+        <br>
+        <label for="favVillain">Favorite Villain:</label>
+        <input type="text" name="favVillain" id="favVillain">
+        <br>
+        <br>
+        <input id ="submit-button" type="button" value="Submit">
+        </fieldset>
+		<br>
+		<img src= images/Spreadsheet.jpg width=100% alt="Screenshot of google spreadsheet">
+		<p>Screenshot of the google spreadsheet with the results we collected during Bytejam.</p>
+	</aside>
+	</div>
+	<footer>
+		<div id="footerNav">
+		<ul>
+			<li><a href="https://www.facebook.com/chase2457">Facebook</a></li>
+			<li><a href="https://www.linkedin.com/in/chase-earnest-6a1160252">LinkedIn</a></li>
+			<li><a href="https://www.instagram.com/chase.earnest/">Instagram</a></li>
+			<li><a href="https://www.twitter.com/ChsisntEarnest">Twitter</a></li>
+		</div>
+		</ul>
+	</footer>
+</div>
+</body>
+</html>
+
+		
